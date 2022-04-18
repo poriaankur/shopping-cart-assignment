@@ -1,0 +1,29 @@
+// Categories
+main {
+    .Category-section{
+        display: flex;
+        box-shadow: 0 5px 5px #d3d3d361;
+        min-height: 200px;
+        margin-bottom: 15px;
+        justify-content: space-around;
+        &.even{
+            flex-direction: row-reverse;
+        }
+        img{
+            width: 150px;
+            @media only screen and (min-width: 768px){
+                width:300px;
+            }
+        }
+        .category-description{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .category-description-text{
+            font-size: 12px;
+        }
+    }
+}

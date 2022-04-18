@@ -1,0 +1,14 @@
+<aside class="categories-dropdown">
+    <div class="dropdown">
+        <select id='myCategories'>
+            {{#each this.categories}}
+            <option value="{{this.name}}">{{this.name}}</option>
+            {{/each}}
+        </select>
+        <p class="arrow-down"><i class="arrow down"></i></p>
+        <ul id="myCategories-list">
+        {{#each this.categories}}
+            <a href="/"><li>{{this.name}}</li></a>  
+        {{/each}}
+    </div>
+</aside>

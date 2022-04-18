@@ -1,0 +1,20 @@
+<main>
+    <h1 class="sr-only">Homepage</h1>
+    {{#each this.categories}}
+        {{!-- <span>{{@}}</span> --}}
+        {{!-- {{setVariable "thisVar" "Contents Here"}} --}}
+        {{#if this.enabled}}
+        <div class="Category-section">
+            <a href="/">
+                <img src="{{this.imageUrl}}" alt="{{this.key}}">
+                {{this.order}}
+            </a>
+            <div class="category-description">
+                <h2>{{this.name}}</h2>
+                <div class="category-description-text">{{this.description}}</div>
+                <button class="btn btn-danger">Explore - {{this.key}}</button>
+            </div>
+        </div>
+        {{/if}}
+    {{/each}}
+</main>

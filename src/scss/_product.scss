@@ -1,0 +1,42 @@
+.product-section-wrapper{
+    @media only screen and (min-width: 768px){
+        display: flex;
+    }
+    aside{
+        @media only screen and (min-width: 768px){
+            min-width: 25%;
+            background-color: #d3d3d3b3;
+        }
+        ul{
+            @media only screen and (min-width: 768px){
+                list-style: none;
+                padding: 0;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+        li{
+            display: block;
+            min-height: 37px;
+            border-bottom: 2px solid #a9a9a9c7;
+            padding-left: 35px;
+            color: #a9a9a9;
+        }
+    }
+}
+
+#myCategories{
+    width: -webkit-fill-available;
+    color: white;
+    background-color: red;
+    min-height: 53px;
+    padding: 0 37px;
+    border: 0;
+    font-size: 25px;
+    appearance: none;
+
+    @media only screen and (min-width: 768px){
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+.registration-page-wrapper{
+    .register-wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+
+    .register-text, .register-form{
+        flex-basis: 300px;
+    }
+
+    .form-group{
+        input{
+            border: none;
+            border-bottom: 1px solid #ced4da;
+            margin-bottom:10px;
+        }
+        input:focus{
+            border:none;
+            border-bottom:aqua;
+
+        }
+        label{
+            margin:10px 0 0 10px;
+        }
+    }
+    button{
+        width:100%;
+        margin-top: 10px;
+    }
+}
